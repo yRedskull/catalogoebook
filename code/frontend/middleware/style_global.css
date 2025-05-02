@@ -1,0 +1,23 @@
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+/* Quando o botão tem a classe "open" */
+#hamburger.open #hamburger-icon {
+    opacity: 0;
+}
+
+#hamburger.open #close-icon {
+    opacity: 1;
+}
+
+a {
+    cursor: pointer;
+}

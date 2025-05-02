@@ -1,0 +1,50 @@
+{{ template "first-part" .}}
+
+<title>Calma aí! 😅</title>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #ef4444;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1rem;
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+        .note {
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+    </style>
+
+{{ template "middle-part" .}}
+
+<div class="container">
+  <h1>Calma lá, meu amigo!</h1>
+  <br>
+  <p>🤨✋</p>
+  <p>Parece que você está tentando acessar nossa página muitas vezes em um curto período.</p>
+  <p>Dá um tempinho e tente novamente em alguns segundos.</p>
+  <p class="note">Se você acha que isso é um erro, entre em contato conosco.</p>
+</div>
+
+{{ template "end-part" .}}
