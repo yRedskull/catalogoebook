@@ -59,10 +59,10 @@ func ConfigServer() (*gin.Engine, error) {
 	r.Use(CompressionMiddleware())
 
 	// MODE DEBUG - NOT PRODUCTION!!!
-	gin.SetMode(gin.DebugMode)
+	/* gin.SetMode(gin.DebugMode)
 	r.Use(gin.Logger())
-
-	/* gin.SetMode(gin.ReleaseMode) */
+ */
+	gin.SetMode(gin.ReleaseMode)
 
 	r.Use(gin.Recovery())
 
