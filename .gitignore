@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+.env
+tailwind.css
+code/frontend/static/css/
+code/frontend/static/js/
+.gitattributes
