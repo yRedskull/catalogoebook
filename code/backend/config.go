@@ -60,8 +60,8 @@ func ConfigServer() (*gin.Engine, error) {
 
 	// MODE DEBUG - NOT PRODUCTION!!!
 	/* gin.SetMode(gin.DebugMode)
-	r.Use(gin.Logger())
- */
+	r.Use(gin.Logger()) */
+
 	gin.SetMode(gin.ReleaseMode)
 
 	r.Use(gin.Recovery())

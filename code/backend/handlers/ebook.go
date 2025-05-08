@@ -26,10 +26,12 @@ func ViewEbook(c *gin.Context) {
 
 	id := manager["id"].(string)
 	contact := manager["contact"].(string)
+	first_name := utils.CapitalizeSentence(utils.GetFirstName(manager["name"].(string)))
 
 	link_wts := utils.GenerateLinkWts(contact, "Olá, vim pelo ebook da Bonífica e gostaria de saber mais sobre os produtos.")
 
 	data := map[string]any{
+		"first_name": first_name,
 		"link_wts": link_wts,
 		"source_pdf": "https://filess3.s3.sa-east-1.amazonaws.com/Cat%C3%A1logo+bnf+2025.pdf",
 		"thumb_pdf": "https://filess3.s3.sa-east-1.amazonaws.com/Cat%C3%A1logo+bnf+2025_page-0001.jpg",
